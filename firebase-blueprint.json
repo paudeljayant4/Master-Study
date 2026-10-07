@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "DailyChecklistSummary": {
+      "path": "users/{userId}/checklists/{dateString}",
+      "fields": {
+        "userId": { "type": "string" },
+        "dateString": { "type": "string" },
+        "completedCount": { "type": "number" },
+        "totalCount": { "type": "number" },
+        "completionPercentage": { "type": "number" },
+        "completedBlockIds": { "type": "list" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "StudyLog": {
+      "path": "users/{userId}/study_logs/{logId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "blockId": { "type": "string" },
+        "title": { "type": "string" },
+        "dateString": { "type": "string" },
+        "isCompleted": { "type": "boolean" },
+        "notes": { "type": "string" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    }
+  }
+}

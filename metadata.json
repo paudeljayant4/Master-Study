@@ -1,0 +1,6 @@
+{
+  "name": "Master Study",
+  "description": "Master Full-Day Self-Study Schedule with live block tracker, Asmita's Old is Gold past questions engine, daily checklist, Pomodoro/timed practice, and mistake review journal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
